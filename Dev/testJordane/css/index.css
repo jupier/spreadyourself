@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+button
+{
+	/*margin: 0.2em;*/
+	border-radius: 0.2em;
+	border: 0.1em solid rgba(191, 59, 43, 1);
+	border-bottom: 0.5em solid rgba(191, 59, 43, 1);
+	background-color: rgba(229, 76, 60, 1);
+}
+
+.prefix.button
+{
+	/*margin: 0.2em;*/
+	border-radius: 0.2em;
+	border: 0.1em solid rgba(191, 59, 43, 1);
+	border-bottom: 0.5em solid rgba(191, 59, 43, 1);
+	background-color: rgba(229, 76, 60, 1);
+}
+
+button:hover, .prefix.button:hover
+{
+	background-color: rgba(191, 59, 43, 1);
+}
+
+.logo {
+	width: 217px;
+	margin: auto;
+	/*background-color: green;*/
+}
+
+.title {
+	/*background-color: green;*/
+	text-align: center;
+	font-weight:bolder;
+	color: rgba(77, 77, 77, 1);
+}
+
+.subtitle {
+	text-align: center;
+	font-weight:bolder;
+	color: rgba(179, 179, 179, 1);
+}
+
+.red {
+	color: rgba(229, 76, 60, 1);
+}
+
+.box1 {
+	/*width: 430px;*/
+	margin: auto;
+	background-color: white;
+	padding: 20px;
+}
+
+.boxsocial {
+	border-top:0.1em solid rgba(204, 204, 204, 1);
+	border-bottom:0.1em solid rgba(204, 204, 204, 1);
+	background-color: rgba(230, 230, 230, 1);
+	padding: 20px;
+}
+
+.boxblack {
+	background-color: rgba(77, 77, 77, 1);
+}
+
+.boxblack2 {
+	background-color: rgba(102, 102, 102, 1);
+}
+
+.form {
+	margin: 0;
+}
+
+.forgot {
+	float: right;
+}
+
+.stayLoggedIn {
+	color: rgba(179, 179, 179, 1);
+}
+
+.arrow_box {
+	position: relative;
+	background: #ffffff;
+
+	border:0.1em solid rgba(204, 204, 204, 1);
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(87, 101, 110, 0);
+	
+	border-bottom-color: rgba(204, 204, 204, 1);
+	border-width: 31px;
+	margin-left: -31px;
+}
+
+.forgotLink {
+	color: rgba(229, 76, 60, 1);
+}
+
+.forgotLink:hover {
+	color: rgba(191, 59, 43, 1);
+}
