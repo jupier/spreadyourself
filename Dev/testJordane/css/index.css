@@ -27,9 +27,9 @@ button:hover, .prefix.button:hover
 }
 
 .logo {
-	width: 217px;
+	width: 215px;
 	margin: auto;
-	/*background-color: green;*/
+	display: block;
 }
 
 .title {
