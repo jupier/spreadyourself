@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><%= title %></title>
+        <%- stylesheetLinkTag('foundation', 'normalize') %>
+        <link rel="stylesheet/less" type="text/css" href="/stylesheets/less/admin.less" />
+        <%- javascriptIncludeTag('jquery', 'less', 'modernizr') %>
+        <%- csrfMetaTag() %>
+        <meta charset="utf8">
+        <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a>Admin Section</a></h1>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <%- body %>
+        </div>
+
+    </body>
+</html>
+<%- contentFor('javascripts') %>

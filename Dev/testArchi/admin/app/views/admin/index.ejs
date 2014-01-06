@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<div class="row">
+  	<div class="large-6 large-centered medium-6 medium-centered columns">
+	  	<%- formTagBegin({ action: "admin/connection", class: "login" }) %>
+	  		<div class="row">
+		    	<div class="large-12 columns">
+					<%- labelTag('Login') %>
+					<% flash = request.flash('login').pop(); if (flash) { %>
+						<%- inputTag({name: 'login', type: 'text', autocomplete: 'on', placeholder:'Type your login', class:'error'}) %>
+						<small class="error"><%- flash %></small>
+					<% } else { %>
+						<%- inputTag({name: 'login', type: 'text', autocomplete: 'on', placeholder:'Type your login'}) %>
+					<% }; %>
+				</div>
+			</div>
+			<div class="row">
+		    	<div class="large-12 columns">
+		    		<%- labelTag('Password') %>
+					<% flash = request.flash('pass').pop(); if (flash) { %>
+						<%- inputTag({name: 'pass', type: 'text', autocomplete: 'on', placeholder:'Type your password', class:'error'}) %>
+						<small class="error"><%- flash %></small>
+					<% } else { %>
+						<%- inputTag({name: 'pass', type: 'text', autocomplete: 'on', placeholder:'Type your password'}) %>
+					<% }; %>
+		    	</div>
+		    </div>
+		    <%- inputTag({value: 'Connection', type: 'submit', class: 'button [tiny small large]'}) %>
+		<%- formTagEnd() %>
+  	</div>
+</div>
