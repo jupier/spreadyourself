@@ -3,32 +3,48 @@ body {
   background-color: rgba(242, 242, 242, 1);
 }
 
-button
+.T
 {
-	/*margin: 0.2em;*/
+	background: rgba(229, 76, 60, 1);
 	border-radius: 0.2em;
-	border: 0.1em solid rgba(191, 59, 43, 1);
-	border-bottom: 0.5em solid rgba(191, 59, 43, 1);
+	border-bottom: 0.15em solid rgba(191, 59, 43, 1);
+	width: 100%;
+	font-size: 0.875rem;
+	
+	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	margin: 0px;
+}
+
+.postfix.button {
 	background-color: rgba(229, 76, 60, 1);
+	margin: 0;
+}
+
+.postfix.button:hover {
+	background-color: rgba(191, 59, 43, 1);
 }
 
 .prefix.button
 {
-	/*margin: 0.2em;*/
+	color: #fff;
+	background: rgba(229, 76, 60, 1);
 	border-radius: 0.2em;
-	border: 0.1em solid rgba(191, 59, 43, 1);
-	border-bottom: 0.5em solid rgba(191, 59, 43, 1);
-	background-color: rgba(229, 76, 60, 1);
+	border-bottom: 0.15em solid rgba(191, 59, 43, 1);
 }
 
-button:hover, .prefix.button:hover
+.button:hover, .prefix.button:hover
 {
 	background-color: rgba(191, 59, 43, 1);
 }
 
 .logo {
-	width: 217px;
+	display: block;
 	margin: auto;
+	margin-top: 1em;
+	width: 217px;
 	/*background-color: green;*/
 }
 
@@ -43,6 +59,7 @@ button:hover, .prefix.button:hover
 	text-align: center;
 	font-weight:bolder;
 	color: rgba(179, 179, 179, 1);
+	margin-bottom: 4em;
 }
 
 .red {
@@ -54,6 +71,7 @@ button:hover, .prefix.button:hover
 	margin: auto;
 	background-color: white;
 	padding: 20px;
+	padding-bottom:0px;
 }
 
 .boxsocial {
@@ -61,6 +79,7 @@ button:hover, .prefix.button:hover
 	border-bottom:0.1em solid rgba(204, 204, 204, 1);
 	background-color: rgba(230, 230, 230, 1);
 	padding: 20px;
+	padding-bottom: 0px;
 }
 
 .boxblack {
@@ -84,12 +103,19 @@ button:hover, .prefix.button:hover
 }
 
 .arrow_box {
-	position: relative;
+	max-width: 500px;
+	margin: auto;
 	background: #ffffff;
+}
+
+.arrow_boxborder {
 
 	border:0.1em solid rgba(204, 204, 204, 1);
+
+	position: relative;
 }
-.arrow_box:after, .arrow_box:before {
+
+.arrow_boxborder:after, .arrow_boxborder:before {
 	bottom: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -100,13 +126,13 @@ button:hover, .prefix.button:hover
 	pointer-events: none;
 }
 
-.arrow_box:after {
+.arrow_boxborder:after {
 	border-color: rgba(255, 255, 255, 0);
 	border-bottom-color: #ffffff;
 	border-width: 30px;
 	margin-left: -30px;
 }
-.arrow_box:before {
+.arrow_boxborder:before {
 	border-color: rgba(87, 101, 110, 0);
 	
 	border-bottom-color: rgba(204, 204, 204, 1);
@@ -120,4 +146,7 @@ button:hover, .prefix.button:hover
 
 .forgotLink:hover {
 	color: rgba(191, 59, 43, 1);
+}
+
+.space {
 }
