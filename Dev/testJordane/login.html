@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+  <title>Login | SpreadYourself</title>
+
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="stylesheet" type="text/css" href="css/foundation.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+  <script type="text/JavaScript" src="js/jquery.js"></script>
+  <script type="text/JavaScript" src="js/index.js"></script>
+  <script type="text/JavaScript" src="js/less.js"></script>
+
+</head>
+
+<body>
+
+  <!-- HEADER LOG IN -->
+  <header>
+
+    <div class="row">
+      <div class="small-6 medium-5 large-3 small-centered columns">
+        <img class ="logo" src="img/logo.png"/>
+      </div> 
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 class="title">Welcome to Spread
+          <span class="primaryColor">Yourself</span>
+        </h3>
+      </div>
+    </div>
+
+    <div class="row" id="normalTitle">
+      <div class="small-11 small-centered columns"><h6 class="subtitle">Use your credentials to sign in and access the app</h6></div>
+    </div>
+
+    <div class="row" id="forgotPasswordTitle">
+      <div class="small-11 small-centered columns"><h6 class="subtitle">Use your email that you used to sign up to retrieve your Password</h6></div>
+    </div>
+
+    <div class="row" id="forgotUsernameTitle">
+      <div class="small-11 small-centered columns"><h6 class="subtitle">Use your email that you used to sign up to retrieve your Username</h6></div>
+    </div>
+
+  </header>
+
+  <!-- LOG IN PANEL -->
+  <div id ="loginPanel" class="row">
+
+   <div class="small-12 large-7 small-centered columns">
+    <div class="arrow_box" id="normalContent">
+      <div class="arrow_boxborder">
+        <div class="box1">
+          <form class="form">
+            <div class="row collapse">
+              <div class="small-2 large-2 columns">
+                <span class="prefix"><img src="img/username.png"></span>
+              </div>
+              <div class="small-10 large-10 columns">
+                <input type="text" placeholder="Enter your username" style="margin: 0">
+              </div>
+            </div>
+            <div class="row collapse">
+              <h6 class="forgot"><a class="forgotLink" id="forgotUsername">Forgotten?</a></h6>
+            </div>
+            <div class="row collapse">
+              <div class="small-2 large-2 columns">
+                <span class="prefix"><img src="img/lock.png"></span>
+              </div>
+              <div class="small-8 large-8 columns">
+               <input type="password" placeholder="Enter your password" style="margin: 0">
+             </div>
+             <div class="small-2 large-2 columns">
+               <a href="#" class="button postfix">Show</a>
+             </div>
+           </div>
+           <div class="row collapse">
+            <h6 class="forgot"><a class="forgotLink" id="forgotPassword">Forgotten?</a></h6>
+          </div>
+
+          <div class="row collapse">
+           <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+            <li><a href="#" class="button prefix" style="margin: 0px">Sign in</a></li>
+            <li><div class="row collapse"><div class="small-8 medium-8 large-8 columns"> <h6 class="stayLoggedIn">Keep me logged in</h6></div><div class="small-4 medium-4 large-4 columns"><div class="switch" style="margin: 0px;">
+              <input id="z" name="switch-z" type="radio" checked>
+              <label for="z" onclick="">Off</label>
+
+              <input id="z1" name="switch-z" type="radio">
+              <label for="z1" onclick="">On</label>
+              <span></span>
+            </div></div></div></li>
+          </ul>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="boxsocial">
+      <ul class="small-block-grid-1 medium-block-grid-4 large-block-grid-2">
+        <li><a href="#" class="button T"><div class="row collapse"><div class="small-3 medium-12 large-3 columns" style="height: 37px;  "><img src="img/facebook.png" style="height: 20px;  margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; "></div><div class="small-9 medium-12 large-9 columns" style=" padding-top: 10px; padding-bottom: 10px;">Log in with Facebook</div></div></a></li>
+        <li><a href="#" class="button T"><div class="row collapse"><div class="small-3 medium-12 large-3 columns" style="height: 37px;  "><img src="img/twitter.png" style="height: 20px;  margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; "></div><div class="small-9 medium-12 large-9 columns" style=" padding-top: 10px; padding-bottom: 10px;">Log in with Twitter</div></div></a></li>
+        <li><a href="#" class="button T"><div class="row collapse"><div class="small-3 medium-12 large-3 columns" style="height: 37px;  "><img src="img/linkedIn.png" style="height: 20px;  margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; "></div><div class="small-9 medium-12 large-9 columns" style=" padding-top: 10px; padding-bottom: 10px;">Log in with LinkedIn</div></div></a></li>
+        <li><a href="#" class="button T"><div class="row collapse"><div class="small-3 medium-12 large-3 columns" style="height: 37px;  "><img src="img/google+.png" style="height: 20px;  margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; "></div><div class="small-9 medium-12 large-9 columns" style=" padding-top: 10px; padding-bottom: 10px; ">Log in with Google+</div></div></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row collapse" style="height:56px;">
+   <div class="small-9 large-9 columns" style="height:100%;"> 
+    <div class="boxblack" style="height:100%;">
+      <div style="text-align: center; color:white;" class="blockcreateaccount">
+        <a href="signup.html" class="forgotLink2">Create an account</a>
+      </div>
+    </div>
+  </div>
+  <div class="small-3 large-3 columns" style="height:100%;"> 
+    <div class="boxblack2" style="height:100%">
+      <div class="circle">
+        <a class="absolutecenter">?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 small-centered columns"><h4 style="padding-top: 30px; text-align: center; background: rgba(242, 242, 242, 1); margin: 0;"><small>©2013-2014 All Rights Reserved. SpreadYourself® is a registered trademark of The DreamTeam Group.</small></h4></div>
+</div> 
+</div>
+
+<!-- FORGOT USERNAME & PASSWORD-->
+
+<div class="arrow_box" style="display:none;" id="forgotContent">
+  <div class="arrow_boxborder">
+    <div class="box1">
+      <form>
+        <div class="row collapse">
+          <div class="small-2 large-2 columns">
+            <span class="prefix"><img src="img/email.png"></span>
+          </div>
+          <div class="small-8 large-8 columns">
+           <input type="password" placeholder="Enter your email" style="margin: 0">
+         </div>
+         <div class="small-2 large-2 columns">
+           <a href="#" class="button postfix">Send</a>
+         </div>
+       </div>
+
+     </form>
+
+   </div>
+ </div>
+
+ <div class="row collapse" style="height:56px;">
+   <div class="small-9 large-9 columns" style="height:100%;"> 
+    <div class="boxblack" style="height:100%;">
+      <div style="text-align: center; color:white;" class="blockcreateaccount">
+        <a href="http://localhost:8888/spreadyourself/Dev/testjordane/login.html" class="forgotLink2" id="returnToLogIn">Return to login</a>
+      </div>
+    </div>
+  </div>
+  <div class="small-3 large-3 columns" style="height:100%;"> 
+    <div class="boxblack2" style="height:100%">
+      <div class="circle">
+        <a class="absolutecenter">?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 small-centered columns"><h4 style="padding-top: 30px; text-align: center; background: rgba(242, 242, 242, 1); margin: 0;"><small>©2013-2014 All Rights Reserved. SpreadYourself® is a registered trademark of The DreamTeam Group.</small></h4></div>
+</div> 
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
